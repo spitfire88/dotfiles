@@ -1,0 +1,7 @@
+alias sapt='sudo apt'
+alias gpt='cd $GOPATH'
+alias ebash='vim ~/.bashrc'
+alias ebalias='vim ~/.bash_aliases'
+alias rbash='source ~/.bashrc'
+#alias go='https_proxy=https://proxy-us.intel.com:911 go'
+alias curl='curl --proxy http://proxy-us.intel.com:911'
