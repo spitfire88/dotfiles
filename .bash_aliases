@@ -46,6 +46,31 @@ alias cts='ctags-exuberant -R *'
 alias rmr='rm -rf'
 alias t='htop'
 
+## k8s
+alias k="kubectl"
+alias kedit="kubectl edit"
+alias krs='kubectl get replicaset'
+alias kds='kubectl get daemonset'
+alias kns='kubectl get namespaces'
+alias kp="kubectl get po"
+alias kpw="kubectl get po --watch"
+alias kn="kubectl get no"
+alias ksvc="kubectl get svc"
+alias ksvcw="kubectl get svc -o wide --all-namespaces"
+alias kdep="kubectl get deployment"
+alias kpvc="kubectl get pvc"
+alias kall="kubectl get po --all-namespaces"
+alias kallw="kubectl get po --all-namespaces --watch"
+alias kafv="kubectl --v=5 apply -f"
+alias kcfv="kubectl --v=5 create -f"
+alias kd="kubectl describe"
+alias kdel="kubectl delete -f"
+alias kep="kubectl get ep"
+alias king="kubectl get ingress"
+alias kar='kubectl api-resources'
+alias ksns='kubectl config set-context --current'
+alias ksnsd='kubectl config set-context --current --namespace=default'
+
 # Proxied Commands
 #alias go='https_proxy=https://proxy-us.intel.com:911 go'
 #alias curl='curl --proxy http://proxy-us.intel.com:911'
