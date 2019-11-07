@@ -71,6 +71,9 @@ alias kar='kubectl api-resources'
 alias ksns='kubectl config set-context --current'
 alias ksnsd='kubectl config set-context --current --namespace=default'
 
+# to remember
+#git remote add rghetia https://github.com/rghetia/microservices-demo.git
+
 # Proxied Commands
 #alias go='https_proxy=https://proxy-us.intel.com:911 go'
 #alias curl='curl --proxy http://proxy-us.intel.com:911'
