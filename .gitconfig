@@ -1,7 +1,11 @@
 [http]
-  proxy = http://proxy-us.intel.com:911
+  proxy = http://10.1.192.48:911
 [user]
 	email = sanrio.alvares@intel.com
 	name = spitfire88
 [core]
 	editor = vim
+[safe]
+	directory = /github/workspace
+[credential]
+	helper = store
