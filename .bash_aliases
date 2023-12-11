@@ -17,6 +17,7 @@ alias grv='git remote -v'
 alias gf='git fetch'
 alias greb='git rebase'
 alias grebi='git rebase -i'
+alias glno='git log --name-only'
 alias swpoff='sudo swapoff -a'
 alias p='pwd'
 alias ll='ls -alF'
@@ -45,6 +46,7 @@ alias f='find . -name'
 alias cts='ctags-exuberant -R *'
 alias rmr='rm -rf'
 alias t='htop'
+alias c='clear'
 
 ## k8s
 alias k="kubectl"
@@ -77,3 +79,21 @@ alias ksnsd='kubectl config set-context --current --namespace=default'
 # Proxied Commands
 #alias go='https_proxy=https://proxy-us.intel.com:911 go'
 #alias curl='curl --proxy http://proxy-us.intel.com:911'
+
+# CAPI
+alias tas="tcf acquire --static"
+alias tlv="tcf ls -v"
+alias tlvg="tcf ls -v | grep "
+alias tpc="tcf power-cycle"
+alias tg="tcf get"
+alias tpl="tcf power-ls"
+alias tr="tcf release"
+# tcf tunnel-add fl31ca105gs1503 22 tcp 192.7.4.86
+alias tta="tcf tunnel-add"
+alias ttl="tcf tunnel-ls"
+
+# x11 forwarding, laptop IP
+export DISPLAY='10.212.190.91:0.0'
+
+# build/test servers
+export BSERV='salvares@10.54.77.34'
