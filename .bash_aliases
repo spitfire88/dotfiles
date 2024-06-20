@@ -92,6 +92,14 @@ alias tr="tcf release"
 alias tta="tcf tunnel-add"
 alias ttl="tcf tunnel-ls"
 
+# MISC
+function binary {
+	hex=$1
+	echo "obase=2; ibase=16; ${hex^^}" | bc | rev | sed -r "s/(.{4})/\1 /g" | rev;
+}
+
+alias binary=binary
+
 # x11 forwarding, laptop IP
 export DISPLAY='10.212.190.91:0.0'
 
